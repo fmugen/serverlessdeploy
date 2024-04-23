@@ -1,0 +1,2 @@
+# serverlessdeploy
+コードをAWSのサーバーレスを用いてデプロイするサンプル
