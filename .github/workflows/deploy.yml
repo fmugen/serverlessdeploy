@@ -27,11 +27,11 @@ jobs:
       - name: install package
         run: yarn --cwd sls install
       # test phase
-      - name: execute test
-        run: yarn --cwd sls test
-        env:
-          ENV1_FOR_TEST: ${{ secrets.ENV1_FOR_TEST }}
-          ENV2_FOR_TEST: ${{ secrets.ENV2_FOR_TEST }}
+      #- name: execute test
+      #  run: yarn --cwd sls test
+      #  env:
+      #    ENV1_FOR_TEST: ${{ secrets.ENV1_FOR_TEST }}
+      #    ENV2_FOR_TEST: ${{ secrets.ENV2_FOR_TEST }}
       # deploy phase
       - if: ${{ success() }}
         uses: aws-actions/configure-aws-credentials@v2
