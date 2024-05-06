@@ -41,7 +41,7 @@ jobs:
       - name: serverless deploy
         uses: serverless/github-action@v3.1
         with:
-          args: -c "cd ./sls && serverless deploy --verbose"
+          args: -c "serverless deploy --verbose"
           entrypoint: /bin/sh
         env:
           ENV1_FOR_DEPLOY: ${{ secrets.ENV1_FOR_DEPLOY }}
